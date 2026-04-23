@@ -1,10 +1,11 @@
+-- back compat for old kwarg name
+  
+  begin;
+    
 
-  create or replace   view MY_TEST_PROJECT.dbt_schema.bronze_hosts
-  
-  
-  
-  
-  as (
-    SELECT * FROM MY_TEST_PROJECT.staging.hosts
-  );
-
+        insert into MY_TEST_PROJECT.bronze.bronze_hosts ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT")
+        (
+            select "HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+        );
+    commit;

@@ -953,3 +953,1727 @@ There are 1 unused configuration paths:
 [0m13:56:37.024020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741B16A330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741B1688F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741B16AE40>]}
 [0m13:56:37.024020 [debug] [MainThread]: Flushing usage events
 [0m13:56:37.836286 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:37:51.833294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA1210D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA39B3A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA2D80650>]}
+
+
+============================== 11:37:51.841700 | d613166b-7c0b-41c6-a7ab-015400b7a7a5 ==============================
+[0m11:37:51.841700 [info ] [MainThread]: Running with dbt=1.11.8
+[0m11:37:51.841700 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m11:37:52.659855 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:37:52.659855 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:37:52.659855 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:37:52.942685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA56F2330>]}
+[0m11:37:53.002932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA6743560>]}
+[0m11:37:53.007760 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m11:37:53.390835 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m11:37:53.488277 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:37:53.488277 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:37:53.489356 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:37:53.512935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA6C48320>]}
+[0m11:37:53.568259 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m11:37:53.582351 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m11:37:53.598329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA6FF1A60>]}
+[0m11:37:53.598329 [info ] [MainThread]: Found 3 models, 3 sources, 523 macros
+[0m11:37:53.599329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA572ABA0>]}
+[0m11:37:53.600331 [info ] [MainThread]: 
+[0m11:37:53.601330 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:37:53.601330 [info ] [MainThread]: 
+[0m11:37:53.602327 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:37:53.605937 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m11:37:57.104443 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m11:37:57.105783 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m11:37:57.105783 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:38:00.493599 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.388 seconds
+[0m11:38:00.495640 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MY_TEST_PROJECT, now create_MY_TEST_PROJECT_dbt_schema_bronze)
+[0m11:38:00.495640 [debug] [ThreadPool]: Creating schema "database: "MY_TEST_PROJECT"
+schema: "dbt_schema_bronze"
+"
+[0m11:38:00.499940 [debug] [ThreadPool]: Using snowflake connection "create_MY_TEST_PROJECT_dbt_schema_bronze"
+[0m11:38:00.499940 [debug] [ThreadPool]: On create_MY_TEST_PROJECT_dbt_schema_bronze: create schema if not exists MY_TEST_PROJECT.dbt_schema_bronze
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "create_MY_TEST_PROJECT_dbt_schema_bronze"} */
+[0m11:38:00.633820 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.134 seconds
+[0m11:38:00.636830 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_dbt_schema_bronze'
+[0m11:38:00.637577 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_dbt_schema_bronze"
+[0m11:38:00.637577 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_dbt_schema_bronze: show objects in MY_TEST_PROJECT.dbt_schema_bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_dbt_schema_bronze"} */;
+[0m11:38:00.637577 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:38:01.171309 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.521 seconds
+[0m11:38:01.173012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA13F94F0>]}
+[0m11:38:01.182025 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m11:38:01.183015 [info ] [Thread-2 (]: 1 of 3 START sql table model dbt_schema_bronze.bronze_bookings ................. [RUN]
+[0m11:38:01.183015 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m11:38:01.183960 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m11:38:01.189126 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m11:38:01.191172 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m11:38:01.209674 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m11:38:01.209674 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m11:38:01.209674 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace transient table MY_TEST_PROJECT.dbt_schema_bronze.bronze_bookings
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.bookings
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m11:38:01.209674 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:38:04.692425 [debug] [Thread-2 (]: SQL status: SUCCESS 5000 in 3.474 seconds
+[0m11:38:04.709983 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA6B87410>]}
+[0m11:38:04.709983 [info ] [Thread-2 (]: 1 of 3 OK created sql table model dbt_schema_bronze.bronze_bookings ............ [[32mSUCCESS 5000[0m in 3.52s]
+[0m11:38:04.709983 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m11:38:04.709983 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m11:38:04.709983 [info ] [Thread-2 (]: 2 of 3 START sql table model dbt_schema_bronze.bronze_hosts .................... [RUN]
+[0m11:38:04.709983 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m11:38:04.709983 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m11:38:04.715674 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m11:38:04.715674 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m11:38:04.717681 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m11:38:04.721063 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m11:38:04.721063 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace transient table MY_TEST_PROJECT.dbt_schema_bronze.bronze_hosts
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.hosts
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m11:38:05.937628 [debug] [Thread-2 (]: SQL status: SUCCESS 200 in 1.216 seconds
+[0m11:38:05.941054 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA8553530>]}
+[0m11:38:05.941054 [info ] [Thread-2 (]: 2 of 3 OK created sql table model dbt_schema_bronze.bronze_hosts ............... [[32mSUCCESS 200[0m in 1.23s]
+[0m11:38:05.942058 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m11:38:05.942058 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m11:38:05.943051 [info ] [Thread-2 (]: 3 of 3 START sql table model dbt_schema_bronze.bronze_listings ................. [RUN]
+[0m11:38:05.944051 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m11:38:05.944051 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m11:38:05.946051 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m11:38:05.946966 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m11:38:05.949147 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m11:38:05.950142 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m11:38:05.951127 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace transient table MY_TEST_PROJECT.dbt_schema_bronze.bronze_listings
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.listings
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m11:38:06.828163 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 0.886 seconds
+[0m11:38:06.837747 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd613166b-7c0b-41c6-a7ab-015400b7a7a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA8682F30>]}
+[0m11:38:06.839757 [info ] [Thread-2 (]: 3 of 3 OK created sql table model dbt_schema_bronze.bronze_listings ............ [[32mSUCCESS 500[0m in 0.89s]
+[0m11:38:06.839757 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m11:38:06.839757 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:38:06.842494 [debug] [MainThread]: Connection 'create_MY_TEST_PROJECT_dbt_schema_bronze' was left open.
+[0m11:38:06.842494 [debug] [MainThread]: On create_MY_TEST_PROJECT_dbt_schema_bronze: Close
+[0m11:38:06.954532 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_dbt_schema_bronze' was left open.
+[0m11:38:06.954532 [debug] [MainThread]: On list_MY_TEST_PROJECT_dbt_schema_bronze: Close
+[0m11:38:07.062773 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m11:38:07.062773 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m11:38:07.156816 [info ] [MainThread]: 
+[0m11:38:07.156816 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 13.55 seconds (13.55s).
+[0m11:38:07.156816 [debug] [MainThread]: Command end result
+[0m11:38:07.192936 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m11:38:07.192936 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m11:38:07.202065 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m11:38:07.202065 [info ] [MainThread]: 
+[0m11:38:07.202065 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:38:07.202065 [info ] [MainThread]: 
+[0m11:38:07.202065 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m11:38:07.202065 [debug] [MainThread]: Command `dbt run` succeeded at 11:38:07.202065 after 15.60 seconds
+[0m11:38:07.202065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA3C24B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA3A35580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EA45319D0>]}
+[0m11:38:07.202065 [debug] [MainThread]: Flushing usage events
+[0m11:38:08.200906 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:01:55.950580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B0FA45610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B12F71AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B12F70380>]}
+
+
+============================== 10:01:55.961078 | 3c11e4e9-01df-4903-bb22-8e37c9694a2b ==============================
+[0m10:01:55.961078 [info ] [MainThread]: Running with dbt=1.11.8
+[0m10:01:55.961078 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m10:01:56.686964 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m10:01:56.686964 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m10:01:56.686964 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m10:01:56.920521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B1063A060>]}
+[0m10:01:56.970809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B10832E40>]}
+[0m10:01:56.970809 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m10:01:57.251347 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m10:01:57.340667 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:01:57.340667 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:01:57.340667 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:01:57.360655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B15E6F320>]}
+[0m10:01:57.416108 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m10:01:57.420598 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m10:01:57.440625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B160F63F0>]}
+[0m10:01:57.440625 [info ] [MainThread]: Found 3 models, 3 sources, 524 macros
+[0m10:01:57.447679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B15C09340>]}
+[0m10:01:57.447679 [info ] [MainThread]: 
+[0m10:01:57.447679 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:01:57.450514 [info ] [MainThread]: 
+[0m10:01:57.450514 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:01:57.450514 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m10:02:02.033140 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m10:02:02.033140 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m10:02:02.033140 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:02:03.851271 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.821 seconds
+[0m10:02:03.851271 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MY_TEST_PROJECT, now create_MY_TEST_PROJECT_bronze)
+[0m10:02:03.851271 [debug] [ThreadPool]: Creating schema "database: "MY_TEST_PROJECT"
+schema: "bronze"
+"
+[0m10:02:03.851271 [debug] [ThreadPool]: Using snowflake connection "create_MY_TEST_PROJECT_bronze"
+[0m10:02:03.851271 [debug] [ThreadPool]: On create_MY_TEST_PROJECT_bronze: create schema if not exists MY_TEST_PROJECT.bronze
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "create_MY_TEST_PROJECT_bronze"} */
+[0m10:02:03.992055 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.132 seconds
+[0m10:02:03.997873 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m10:02:04.003130 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m10:02:04.003130 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m10:02:04.003130 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:02:05.079417 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.070 seconds
+[0m10:02:05.083830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B159C1B80>]}
+[0m10:02:05.092310 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m10:02:05.092310 [info ] [Thread-2 (]: 1 of 3 START sql table model bronze.bronze_bookings ............................ [RUN]
+[0m10:02:05.093311 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m10:02:05.093668 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m10:02:05.098433 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m10:02:05.100685 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m10:02:05.121301 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m10:02:05.121301 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m10:02:05.121301 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace transient table MY_TEST_PROJECT.bronze.bronze_bookings
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.bookings
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m10:02:05.121301 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:02:07.248492 [debug] [Thread-2 (]: SQL status: SUCCESS 5000 in 2.120 seconds
+[0m10:02:07.270071 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B149E9850>]}
+[0m10:02:07.270436 [info ] [Thread-2 (]: 1 of 3 OK created sql table model bronze.bronze_bookings ....................... [[32mSUCCESS 5000[0m in 2.17s]
+[0m10:02:07.271564 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m10:02:07.271564 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m10:02:07.271564 [info ] [Thread-2 (]: 2 of 3 START sql table model bronze.bronze_hosts ............................... [RUN]
+[0m10:02:07.272522 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m10:02:07.272522 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m10:02:07.274586 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m10:02:07.275704 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m10:02:07.277593 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m10:02:07.278852 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m10:02:07.278852 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace transient table MY_TEST_PROJECT.bronze.bronze_hosts
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.hosts
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m10:02:08.721672 [debug] [Thread-2 (]: SQL status: SUCCESS 200 in 1.442 seconds
+[0m10:02:08.722680 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B177DF560>]}
+[0m10:02:08.723684 [info ] [Thread-2 (]: 2 of 3 OK created sql table model bronze.bronze_hosts .......................... [[32mSUCCESS 200[0m in 1.45s]
+[0m10:02:08.724643 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m10:02:08.724643 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m10:02:08.725697 [info ] [Thread-2 (]: 3 of 3 START sql table model bronze.bronze_listings ............................ [RUN]
+[0m10:02:08.726551 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m10:02:08.726551 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m10:02:08.729374 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m10:02:08.730417 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m10:02:08.733603 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m10:02:08.734778 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m10:02:08.735817 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace transient table MY_TEST_PROJECT.bronze.bronze_listings
+    
+    
+    
+    as (SELECT * FROM MY_TEST_PROJECT.staging.listings
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m10:02:10.192716 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 1.462 seconds
+[0m10:02:10.192716 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c11e4e9-01df-4903-bb22-8e37c9694a2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B17739400>]}
+[0m10:02:10.192716 [info ] [Thread-2 (]: 3 of 3 OK created sql table model bronze.bronze_listings ....................... [[32mSUCCESS 500[0m in 1.47s]
+[0m10:02:10.202208 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m10:02:10.202208 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:02:10.202208 [debug] [MainThread]: Connection 'create_MY_TEST_PROJECT_bronze' was left open.
+[0m10:02:10.202208 [debug] [MainThread]: On create_MY_TEST_PROJECT_bronze: Close
+[0m10:02:10.319849 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m10:02:10.319849 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m10:02:10.439045 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m10:02:10.440040 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m10:02:10.553456 [info ] [MainThread]: 
+[0m10:02:10.555475 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 13.10 seconds (13.10s).
+[0m10:02:10.555475 [debug] [MainThread]: Command end result
+[0m10:02:10.583802 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m10:02:10.586061 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m10:02:10.594794 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m10:02:10.594794 [info ] [MainThread]: 
+[0m10:02:10.596804 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:02:10.596804 [info ] [MainThread]: 
+[0m10:02:10.596804 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m10:02:10.598810 [debug] [MainThread]: Command `dbt run` succeeded at 10:02:10.598810 after 14.86 seconds
+[0m10:02:10.598810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B0FA45610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B13604B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B13605100>]}
+[0m10:02:10.598810 [debug] [MainThread]: Flushing usage events
+[0m10:02:11.444720 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:33:43.643494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19DEA0DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A06437D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A0642E70>]}
+
+
+============================== 13:33:43.643494 | 485a1893-dae5-4753-9ef6-161c1ca360ae ==============================
+[0m13:33:43.643494 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:33:43.643494 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'indirect_selection': 'eager', 'invocation_command': 'dbt compile', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:33:43.953170 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:33:43.953170 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:33:43.953170 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:33:44.176591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '485a1893-dae5-4753-9ef6-161c1ca360ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A3606A80>]}
+[0m13:33:44.244648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '485a1893-dae5-4753-9ef6-161c1ca360ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A1163AD0>]}
+[0m13:33:44.255686 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:33:44.517651 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:33:44.615188 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m13:33:44.615560 [debug] [MainThread]: previous checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, current checksum: 205f67941a37c44b34a8b709ae683ccb08f2061b4926cd29bbf893726d03834e
+[0m13:33:44.615560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '485a1893-dae5-4753-9ef6-161c1ca360ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A0CDB770>]}
+[0m13:33:45.995653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '485a1893-dae5-4753-9ef6-161c1ca360ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A3BB0560>]}
+[0m13:33:46.089020 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:33:46.093684 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:33:46.105013 [error] [MainThread]: Encountered an error:
+Found a cycle: model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:33:46.170836 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 391, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 408, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\cli\main.py", line 351, in compile
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\task\runnable.py", line 610, in run
+    self._runtime_initialize()
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\task\compile.py", line 143, in _runtime_initialize
+    super()._runtime_initialize()
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\task\runnable.py", line 182, in _runtime_initialize
+    self.compile_manifest()
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\task\base.py", line 135, in compile_manifest
+    self.graph = self.compiler.compile(self.manifest)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\compilation.py", line 680, in compile
+    linker.link_graph(manifest)
+  File "C:\Users\user\gcp_dbt_Snowflake\.venv\Lib\site-packages\dbt\compilation.py", line 212, in link_graph
+    raise RuntimeError("Found a cycle: {}".format(cycle))
+RuntimeError: Found a cycle: model.gcp_dbt_snowflake_project.bronze_listings
+
+[0m13:33:46.174257 [debug] [MainThread]: Command `dbt compile` failed at 13:33:46.174257 after 2.76 seconds
+[0m13:33:46.174257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A0CD9D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A3794A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A3D39280>]}
+[0m13:33:46.175246 [debug] [MainThread]: Flushing usage events
+[0m13:33:47.099736 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:39:19.767635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012384500E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012384AE15E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012384AE1E80>]}
+
+
+============================== 13:39:19.783637 | a6813669-11a5-4d9f-b644-86414f571164 ==============================
+[0m13:39:19.783637 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:39:19.783637 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt compile', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:39:20.062737 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:39:20.062737 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:39:20.062737 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:39:20.284718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012389D076B0>]}
+[0m13:39:20.332572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012387378F20>]}
+[0m13:39:20.332572 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:39:20.566177 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:39:20.758706 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m13:39:20.758706 [debug] [MainThread]: Partial parsing: updated file: gcp_dbt_snowflake_project://models\bronze\bronze_listings.sql
+[0m13:39:20.758706 [debug] [MainThread]: Partial parsing: updated file: gcp_dbt_snowflake_project://models\bronze\bronze_bookings.sql
+[0m13:39:20.758706 [debug] [MainThread]: Partial parsing: updated file: gcp_dbt_snowflake_project://models\bronze\bronze_hosts.sql
+[0m13:39:20.994338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001238A063B60>]}
+[0m13:39:21.090389 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:39:21.090389 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:39:21.090389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001238A4DDE80>]}
+[0m13:39:21.090389 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:39:21.090389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001238A362C00>]}
+[0m13:39:21.106181 [info ] [MainThread]: 
+[0m13:39:21.106181 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:39:21.108200 [info ] [MainThread]: 
+[0m13:39:21.108200 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:39:21.113078 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:39:21.195204 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:39:21.195204 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:39:21.196208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:39:22.533634 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.338 seconds
+[0m13:39:22.537995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6813669-11a5-4d9f-b644-86414f571164', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000123889B3230>]}
+[0m13:39:22.542335 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:39:22.542335 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:39:22.542335 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:39:22.548335 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:39:22.549338 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:39:22.550342 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:39:22.550342 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:39:22.550342 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:39:22.551339 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:39:22.554083 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:39:22.554083 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:39:22.554083 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:39:22.554083 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:39:22.554083 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:39:22.554083 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_listings, now analysis.gcp_dbt_snowflake_project.if_else)
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:39:22.554083 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.if_else"
+[0m13:39:22.554083 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:39:22.567460 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:39:22.567460 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:39:22.567460 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.gcp_dbt_snowflake_project.if_else, now analysis.gcp_dbt_snowflake_project.loop)
+[0m13:39:22.567460 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.loop
+[0m13:39:22.567460 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.loop"
+[0m13:39:22.567460 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.loop
+[0m13:39:22.567460 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:39:22.567460 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:39:22.567460 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:39:22.567460 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:39:22.712502 [debug] [MainThread]: Connection 'analysis.gcp_dbt_snowflake_project.loop' was properly closed.
+[0m13:39:22.713505 [debug] [MainThread]: Command end result
+[0m13:39:22.735427 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:39:22.741844 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:39:22.747874 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:39:22.747874 [debug] [MainThread]: Command `dbt compile` succeeded at 13:39:22.747874 after 3.16 seconds
+[0m13:39:22.747874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000123878BAD20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000123889D6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012386B93230>]}
+[0m13:39:22.747874 [debug] [MainThread]: Flushing usage events
+[0m13:39:23.580199 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:18.345833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1611D0D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A163972F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A163972CF0>]}
+
+
+============================== 13:42:18.345833 | 1931a114-e24f-431d-bc4b-b0dd5b369fb9 ==============================
+[0m13:42:18.345833 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:42:18.345833 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:42:18.638854 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:42:18.638854 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:42:18.638854 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:42:18.861903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A163CEE420>]}
+[0m13:42:18.911735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A163B33EC0>]}
+[0m13:42:18.911735 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:42:19.142614 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:42:19.286793 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:42:19.286793 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:42:19.286793 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:42:19.334447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A166BEB830>]}
+[0m13:42:19.412789 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:42:19.412789 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:42:19.432734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A166FE14F0>]}
+[0m13:42:19.432734 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:42:19.432734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1656AC380>]}
+[0m13:42:19.432734 [info ] [MainThread]: 
+[0m13:42:19.432734 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:42:19.432734 [info ] [MainThread]: 
+[0m13:42:19.432734 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:42:19.448975 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m13:42:19.526527 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m13:42:19.526527 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m13:42:19.527525 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:42:20.683171 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.156 seconds
+[0m13:42:20.685178 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:42:20.694653 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:42:20.694653 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:42:20.694653 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:42:21.671838 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.980 seconds
+[0m13:42:21.671838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1613BD5E0>]}
+[0m13:42:21.671838 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:42:21.671838 [info ] [Thread-2 (]: 1 of 3 START sql table model bronze.bronze_bookings ............................ [RUN]
+[0m13:42:21.687584 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:42:21.687584 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:42:21.687584 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:42:21.687584 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:42:21.714304 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:42:21.714304 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:42:21.714304 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace transient table MY_TEST_PROJECT.bronze.bronze_bookings
+    
+    
+    
+    as (
+
+
+SELECT * FROM MY_TEST_PROJECT.staging.bookings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_bookings )
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:42:21.714304 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:42:23.868933 [debug] [Thread-2 (]: SQL status: SUCCESS 5000 in 2.163 seconds
+[0m13:42:23.902122 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1656E9730>]}
+[0m13:42:23.902122 [info ] [Thread-2 (]: 1 of 3 OK created sql table model bronze.bronze_bookings ....................... [[32mSUCCESS 5000[0m in 2.21s]
+[0m13:42:23.902122 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:42:23.902122 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:42:23.902122 [info ] [Thread-2 (]: 2 of 3 START sql table model bronze.bronze_hosts ............................... [RUN]
+[0m13:42:23.902122 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:42:23.902122 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:42:23.902122 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:42:23.902122 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:42:23.902122 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:42:23.902122 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:42:23.902122 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace transient table MY_TEST_PROJECT.bronze.bronze_hosts
+    
+    
+    
+    as (
+
+
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_hosts )
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:42:25.389200 [debug] [Thread-2 (]: SQL status: SUCCESS 200 in 1.489 seconds
+[0m13:42:25.405351 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1685709B0>]}
+[0m13:42:25.405351 [info ] [Thread-2 (]: 2 of 3 OK created sql table model bronze.bronze_hosts .......................... [[32mSUCCESS 200[0m in 1.50s]
+[0m13:42:25.405351 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:42:25.405351 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:42:25.405351 [info ] [Thread-2 (]: 3 of 3 START sql table model bronze.bronze_listings ............................ [RUN]
+[0m13:42:25.405351 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:42:25.405351 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:42:25.405351 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:42:25.405351 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:42:25.405351 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:42:25.405351 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:42:25.405351 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace transient table MY_TEST_PROJECT.bronze.bronze_listings
+    
+    
+    
+    as (
+
+
+SELECT * FROM MY_TEST_PROJECT.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:42:26.264398 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 0.847 seconds
+[0m13:42:26.265396 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1931a114-e24f-431d-bc4b-b0dd5b369fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A167441E20>]}
+[0m13:42:26.266397 [info ] [Thread-2 (]: 3 of 3 OK created sql table model bronze.bronze_listings ....................... [[32mSUCCESS 500[0m in 0.86s]
+[0m13:42:26.267398 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:42:26.275256 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:42:26.276412 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT' was left open.
+[0m13:42:26.276412 [debug] [MainThread]: On list_MY_TEST_PROJECT: Close
+[0m13:42:26.381327 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:42:26.381327 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:42:26.489631 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m13:42:26.491649 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m13:42:26.591401 [info ] [MainThread]: 
+[0m13:42:26.591401 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 7.16 seconds (7.16s).
+[0m13:42:26.591401 [debug] [MainThread]: Command end result
+[0m13:42:26.613820 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:42:26.622908 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:42:26.627210 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:42:26.627210 [info ] [MainThread]: 
+[0m13:42:26.627210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:42:26.627210 [info ] [MainThread]: 
+[0m13:42:26.627210 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:42:26.632321 [debug] [MainThread]: Command `dbt run` succeeded at 13:42:26.632321 after 8.47 seconds
+[0m13:42:26.632321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1640AFA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A165648230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A163E51730>]}
+[0m13:42:26.632321 [debug] [MainThread]: Flushing usage events
+[0m13:42:27.481845 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:32.214290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A29F7E120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A29F7E0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A29F7EEA0>]}
+
+
+============================== 13:50:32.214290 | 61e41875-a3cb-43bd-95da-9f52174ae05c ==============================
+[0m13:50:32.214290 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:50:32.214290 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt compile', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:50:32.487483 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:50:32.487483 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:50:32.489492 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:50:32.714526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2A3076B0>]}
+[0m13:50:32.780061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A298A29C0>]}
+[0m13:50:32.782070 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:50:33.075961 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:50:33.233092 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:50:33.233092 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:50:33.233092 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:50:33.280972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2CA8E810>]}
+[0m13:50:33.393359 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:50:33.401373 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:50:33.414370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2CEBA8D0>]}
+[0m13:50:33.415987 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:50:33.415987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A29C1DBE0>]}
+[0m13:50:33.415987 [info ] [MainThread]: 
+[0m13:50:33.415987 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:50:33.415987 [info ] [MainThread]: 
+[0m13:50:33.415987 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:50:33.429005 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:50:33.549755 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:50:33.549755 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:50:33.549755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:50:35.346973 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.798 seconds
+[0m13:50:35.362951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61e41875-a3cb-43bd-95da-9f52174ae05c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2C8BBE90>]}
+[0m13:50:35.365340 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:50:35.365340 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:50:35.365340 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:50:35.379074 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:50:35.379074 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:50:35.379074 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:50:35.379074 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:50:35.382587 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:50:35.382587 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:50:35.382587 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:50:35.382587 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:50:35.382587 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:50:35.382587 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:50:35.382587 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_listings, now analysis.gcp_dbt_snowflake_project.if_else)
+[0m13:50:35.382587 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:50:35.382587 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.if_else"
+[0m13:50:35.394959 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:50:35.394959 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:50:35.394959 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:50:35.394959 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.gcp_dbt_snowflake_project.if_else, now analysis.gcp_dbt_snowflake_project.loop)
+[0m13:50:35.394959 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.loop
+[0m13:50:35.394959 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.loop"
+[0m13:50:35.394959 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.loop
+[0m13:50:35.394959 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:50:35.394959 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:50:35.394959 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:50:35.394959 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:50:35.502966 [debug] [MainThread]: Connection 'analysis.gcp_dbt_snowflake_project.loop' was properly closed.
+[0m13:50:35.504955 [debug] [MainThread]: Command end result
+[0m13:50:35.528892 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:50:35.531253 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:50:35.537489 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:50:35.538491 [debug] [MainThread]: Command `dbt compile` succeeded at 13:50:35.538491 after 3.57 seconds
+[0m13:50:35.538491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2A234AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2A234B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A2A237500>]}
+[0m13:50:35.538491 [debug] [MainThread]: Flushing usage events
+[0m13:50:36.368614 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:58.439881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C432F8C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C460F40E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C460F4BF0>]}
+
+
+============================== 13:50:58.449717 | 61751db8-02ea-4fd7-b0f9-aba1f5ebb92b ==============================
+[0m13:50:58.449717 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:50:58.449717 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:50:58.697181 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:50:58.697181 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:50:58.697181 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:50:58.887081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C45B15B20>]}
+[0m13:50:58.937031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C477E7EC0>]}
+[0m13:50:58.937031 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:50:59.143919 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:50:59.253967 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:50:59.253967 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:50:59.253967 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:50:59.286617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C48E40800>]}
+[0m13:50:59.345037 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:50:59.351118 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:50:59.359803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C490B95E0>]}
+[0m13:50:59.359803 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:50:59.359803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C490F1A00>]}
+[0m13:50:59.359803 [info ] [MainThread]: 
+[0m13:50:59.364367 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:50:59.364367 [info ] [MainThread]: 
+[0m13:50:59.364367 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:50:59.370368 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m13:50:59.422486 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m13:50:59.422486 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m13:50:59.422486 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:51:01.235968 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.808 seconds
+[0m13:51:01.239963 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:51:01.249925 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:51:01.249925 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:51:01.249925 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:51:03.783885 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.533 seconds
+[0m13:51:03.784908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C48ABBCE0>]}
+[0m13:51:03.784908 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:51:03.784908 [info ] [Thread-2 (]: 1 of 3 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m13:51:03.784908 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:51:03.784908 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:51:03.806854 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:51:03.807927 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:51:03.851059 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:51:03.851059 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.bookings
+
+
+    WHERE  > (SELECT COALESCE(MAX(), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_bookings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:51:03.852067 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:51:04.864821 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c3e0e7-0000-adda-0000-ba250009f1be
+[0m13:51:04.864821 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 11 unexpected '>'.
+syntax error line 12 at position 35 unexpected ','.
+[0m13:51:04.869677 [debug] [Thread-2 (]: Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:51:04.870184 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C45A62000>]}
+[0m13:51:04.870184 [error] [Thread-2 (]: 1 of 3 ERROR creating sql incremental model bronze.bronze_bookings ............. [[31mERROR[0m in 1.08s]
+[0m13:51:04.870184 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:51:04.870184 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:51:04.870184 [debug] [Thread-5 (]: Marking all children of 'model.gcp_dbt_snowflake_project.bronze_bookings' to be skipped because of status 'error'.  Reason: Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','..
+[0m13:51:04.870184 [info ] [Thread-2 (]: 2 of 3 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m13:51:04.870184 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:51:04.870184 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:51:04.870184 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:51:04.870184 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:51:04.870184 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:51:04.870184 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
+
+
+    WHERE  > (SELECT COALESCE(MAX(), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_hosts )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:51:04.986173 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c3e0e7-0000-addb-0000-ba250009e192
+[0m13:51:04.986173 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 11 unexpected '>'.
+syntax error line 12 at position 35 unexpected ','.
+[0m13:51:04.986173 [debug] [Thread-2 (]: Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:51:04.986173 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C4A584680>]}
+[0m13:51:04.986173 [error] [Thread-2 (]: 2 of 3 ERROR creating sql incremental model bronze.bronze_hosts ................ [[31mERROR[0m in 0.12s]
+[0m13:51:04.986173 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:51:04.986173 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:51:04.986173 [debug] [Thread-5 (]: Marking all children of 'model.gcp_dbt_snowflake_project.bronze_hosts' to be skipped because of status 'error'.  Reason: Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','..
+[0m13:51:04.986173 [info ] [Thread-2 (]: 3 of 3 START sql table model bronze.bronze_listings ............................ [RUN]
+[0m13:51:05.000033 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:51:05.000768 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:51:05.002778 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:51:05.004785 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:51:05.022476 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:51:05.024378 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:51:05.024745 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace transient table MY_TEST_PROJECT.bronze.bronze_listings
+    
+    
+    
+    as (
+
+
+SELECT * FROM MY_TEST_PROJECT.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:51:05.605558 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.588 seconds
+[0m13:51:05.642030 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61751db8-02ea-4fd7-b0f9-aba1f5ebb92b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C47809700>]}
+[0m13:51:05.645988 [info ] [Thread-2 (]: 3 of 3 OK created sql table model bronze.bronze_listings ....................... [[32mSUCCESS 1[0m in 0.64s]
+[0m13:51:05.645988 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:51:05.648121 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:51:05.648121 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT' was left open.
+[0m13:51:05.648121 [debug] [MainThread]: On list_MY_TEST_PROJECT: Close
+[0m13:51:05.801821 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:51:05.805927 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:51:05.937202 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m13:51:05.937202 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m13:51:06.072419 [info ] [MainThread]: 
+[0m13:51:06.072419 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 6.71 seconds (6.71s).
+[0m13:51:06.072419 [debug] [MainThread]: Command end result
+[0m13:51:06.101986 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:51:06.104889 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:51:06.108888 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:51:06.108888 [info ] [MainThread]: 
+[0m13:51:06.108888 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:51:06.108888 [info ] [MainThread]: 
+[0m13:51:06.108888 [error] [MainThread]: [31mFailure in model bronze_bookings (models\bronze\bronze_bookings.sql)[0m
+[0m13:51:06.108888 [error] [MainThread]:   Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:51:06.108888 [info ] [MainThread]: 
+[0m13:51:06.108888 [info ] [MainThread]:   compiled code at target\compiled\gcp_dbt_snowflake_project\models\bronze\bronze_bookings.sql
+[0m13:51:06.108888 [info ] [MainThread]: 
+[0m13:51:06.108888 [error] [MainThread]: [31mFailure in model bronze_hosts (models\bronze\bronze_hosts.sql)[0m
+[0m13:51:06.108888 [error] [MainThread]:   Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:51:06.115980 [info ] [MainThread]: 
+[0m13:51:06.117227 [info ] [MainThread]:   compiled code at target\compiled\gcp_dbt_snowflake_project\models\bronze\bronze_hosts.sql
+[0m13:51:06.118233 [info ] [MainThread]: 
+[0m13:51:06.119225 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:51:06.120227 [debug] [MainThread]: Command `dbt run` failed at 13:51:06.120227 after 7.82 seconds
+[0m13:51:06.121229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C45F71730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C48A49EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C4616B200>]}
+[0m13:51:06.121229 [debug] [MainThread]: Flushing usage events
+[0m13:51:06.933315 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:58.328435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022448EC9FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022448EC8920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022448EC8740>]}
+
+
+============================== 13:52:58.328435 | 04ebc875-93c0-439e-9436-ac98e3e92270 ==============================
+[0m13:52:58.328435 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:52:58.328435 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'use_colors': 'True', 'invocation_command': 'dbt compile', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:52:58.561801 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:52:58.561801 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:52:58.561801 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:52:58.749261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04ebc875-93c0-439e-9436-ac98e3e92270', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022448335AF0>]}
+[0m13:52:58.797280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04ebc875-93c0-439e-9436-ac98e3e92270', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002244ACB0770>]}
+[0m13:52:58.797280 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:52:58.973686 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:52:59.074496 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:52:59.074496 [debug] [MainThread]: Partial parsing: updated file: gcp_dbt_snowflake_project://models\bronze\bronze_listings.sql
+[0m13:52:59.203413 [error] [MainThread]: Encountered an error:
+Compilation Error in model bronze_listings (models\bronze\bronze_listings.sql)
+  expected token ',', got 'integer'
+    line 6
+      WHERE {{ incremental_col }} > (SELECT COALESCE(MAX({{ incremental_col }}), '1900-01-01') FROM {{ this }} )
+[0m13:52:59.203413 [debug] [MainThread]: Command `dbt compile` failed at 13:52:59.203413 after 1.04 seconds
+[0m13:52:59.203413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022448ACE600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002244B8CBEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002244B4AE810>]}
+[0m13:52:59.203413 [debug] [MainThread]: Flushing usage events
+[0m13:52:59.991662 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:54:14.084363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02AC34CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02D4F3D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02D3D3620>]}
+
+
+============================== 13:54:14.084363 | 037da14e-b77b-4ce2-90b8-070c56f2e9f0 ==============================
+[0m13:54:14.084363 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:54:14.084363 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'use_colors': 'True', 'invocation_command': 'dbt compile', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:54:14.364507 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:54:14.364507 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:54:14.364507 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:54:14.602567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E030508230>]}
+[0m13:54:14.666455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02F158D40>]}
+[0m13:54:14.666455 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:54:14.902215 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:54:15.054382 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:54:15.054382 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:54:15.055288 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:54:15.086563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E030800800>]}
+[0m13:54:15.182788 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:54:15.182788 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:54:15.198704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E030A7A9F0>]}
+[0m13:54:15.198704 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:54:15.198704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E03041BBC0>]}
+[0m13:54:15.198704 [info ] [MainThread]: 
+[0m13:54:15.198704 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:54:15.198704 [info ] [MainThread]: 
+[0m13:54:15.213783 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:54:15.219744 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:54:15.314673 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:54:15.315811 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:54:15.315811 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:54:16.537863 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.227 seconds
+[0m13:54:16.537863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '037da14e-b77b-4ce2-90b8-070c56f2e9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02AE197C0>]}
+[0m13:54:16.537863 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:16.537863 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:54:16.537863 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:16.553993 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:16.553993 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:16.553993 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:16.553993 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:16.553993 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:16.553993 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:54:16.553993 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:16.570184 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:16.570184 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:54:16.570184 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_listings, now analysis.gcp_dbt_snowflake_project.if_else)
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:54:16.570184 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.if_else"
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:54:16.570184 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:54:16.570184 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.gcp_dbt_snowflake_project.if_else, now analysis.gcp_dbt_snowflake_project.loop)
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.loop
+[0m13:54:16.570184 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.loop"
+[0m13:54:16.570184 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.loop
+[0m13:54:16.570184 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:54:16.570184 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:54:16.570184 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:54:16.570184 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:54:16.694886 [debug] [MainThread]: Connection 'analysis.gcp_dbt_snowflake_project.loop' was properly closed.
+[0m13:54:16.696201 [debug] [MainThread]: Command end result
+[0m13:54:16.717945 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:54:16.721696 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:54:16.726702 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:54:16.727703 [debug] [MainThread]: Command `dbt compile` succeeded at 13:54:16.727703 after 2.82 seconds
+[0m13:54:16.728706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02DF20110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02CC08200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E02C7A09E0>]}
+[0m13:54:16.728706 [debug] [MainThread]: Flushing usage events
+[0m13:54:17.541804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:54:23.633797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001890FEEF4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018912FB4170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018912E8A330>]}
+
+
+============================== 13:54:23.633797 | a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22 ==============================
+[0m13:54:23.633797 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:54:23.633797 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:54:23.910385 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:54:23.910385 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:54:23.910385 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:54:24.144034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018915BB2C60>]}
+[0m13:54:24.207981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018915F6B980>]}
+[0m13:54:24.207981 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:54:24.549224 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:54:24.676754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:54:24.676754 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:54:24.676754 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:54:24.708696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916281DC0>]}
+[0m13:54:24.804636 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:54:24.804636 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:54:24.820332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189164ED7C0>]}
+[0m13:54:24.820332 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:54:24.820332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916532990>]}
+[0m13:54:24.820332 [info ] [MainThread]: 
+[0m13:54:24.820332 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:54:24.820332 [info ] [MainThread]: 
+[0m13:54:24.820332 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:54:24.831914 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m13:54:24.913802 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m13:54:24.913802 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m13:54:24.913802 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:54:26.729624 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.816 seconds
+[0m13:54:26.731656 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:54:26.742157 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:54:26.742157 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:54:26.742157 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:54:27.262181 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.521 seconds
+[0m13:54:27.262181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018915EFBA40>]}
+[0m13:54:27.262181 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:27.262181 [info ] [Thread-2 (]: 1 of 3 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m13:54:27.278055 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:54:27.278055 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:27.283382 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:54:27.283382 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:27.331902 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:54:27.331902 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.bookings
+
+
+    WHERE  > (SELECT COALESCE(MAX(), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_bookings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:54:27.332888 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:54:28.344042 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c3e0ea-0000-adda-0000-ba250009f1c2
+[0m13:54:28.344042 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 11 unexpected '>'.
+syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.344042 [debug] [Thread-2 (]: Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.344042 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018912EE2330>]}
+[0m13:54:28.344042 [error] [Thread-2 (]: 1 of 3 ERROR creating sql incremental model bronze.bronze_bookings ............. [[31mERROR[0m in 1.07s]
+[0m13:54:28.344042 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:54:28.344042 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:28.359995 [debug] [Thread-5 (]: Marking all children of 'model.gcp_dbt_snowflake_project.bronze_bookings' to be skipped because of status 'error'.  Reason: Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','..
+[0m13:54:28.344042 [info ] [Thread-2 (]: 2 of 3 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m13:54:28.359995 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:54:28.359995 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:28.359995 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:54:28.359995 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:28.359995 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:54:28.359995 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
+
+
+    WHERE  > (SELECT COALESCE(MAX(), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_hosts )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:54:28.513988 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c3e0ea-0000-add8-0000-ba25000a51e2
+[0m13:54:28.513988 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 11 unexpected '>'.
+syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.513988 [debug] [Thread-2 (]: Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.513988 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018917AFF8C0>]}
+[0m13:54:28.513988 [error] [Thread-2 (]: 2 of 3 ERROR creating sql incremental model bronze.bronze_hosts ................ [[31mERROR[0m in 0.15s]
+[0m13:54:28.513988 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:54:28.513988 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:28.513988 [debug] [Thread-5 (]: Marking all children of 'model.gcp_dbt_snowflake_project.bronze_hosts' to be skipped because of status 'error'.  Reason: Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','..
+[0m13:54:28.513988 [info ] [Thread-2 (]: 3 of 3 START sql incremental model bronze.bronze_listings ...................... [RUN]
+[0m13:54:28.513988 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:54:28.513988 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:28.513988 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:54:28.513988 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:28.513988 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:54:28.513988 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.listings
+
+
+    WHERE  > (SELECT COALESCE(MAX(), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:54:28.674209 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c3e0ea-0000-ade0-0000-ba25000a818a
+[0m13:54:28.676225 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 11 unexpected '>'.
+syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.678235 [debug] [Thread-2 (]: Database Error in model bronze_listings (models\bronze\bronze_listings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:28.678235 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a845fbc8-4ac3-4eb4-a264-eda5ae0d8e22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916282B70>]}
+[0m13:54:28.679741 [error] [Thread-2 (]: 3 of 3 ERROR creating sql incremental model bronze.bronze_listings ............. [[31mERROR[0m in 0.16s]
+[0m13:54:28.679741 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:54:28.679741 [debug] [Thread-5 (]: Marking all children of 'model.gcp_dbt_snowflake_project.bronze_listings' to be skipped because of status 'error'.  Reason: Database Error in model bronze_listings (models\bronze\bronze_listings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','..
+[0m13:54:28.679741 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:54:28.679741 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT' was left open.
+[0m13:54:28.679741 [debug] [MainThread]: On list_MY_TEST_PROJECT: Close
+[0m13:54:28.780494 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:54:28.780494 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:54:28.876759 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m13:54:28.876759 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m13:54:28.972902 [info ] [MainThread]: 
+[0m13:54:28.972902 [info ] [MainThread]: Finished running 3 incremental models in 0 hours 0 minutes and 4.15 seconds (4.15s).
+[0m13:54:28.972902 [debug] [MainThread]: Command end result
+[0m13:54:29.005755 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:54:29.007764 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:54:29.012844 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:54:29.012844 [info ] [MainThread]: 
+[0m13:54:29.015175 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:54:29.016208 [info ] [MainThread]: 
+[0m13:54:29.017193 [error] [MainThread]: [31mFailure in model bronze_bookings (models\bronze\bronze_bookings.sql)[0m
+[0m13:54:29.018188 [error] [MainThread]:   Database Error in model bronze_bookings (models\bronze\bronze_bookings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:29.018188 [info ] [MainThread]: 
+[0m13:54:29.019188 [info ] [MainThread]:   compiled code at target\compiled\gcp_dbt_snowflake_project\models\bronze\bronze_bookings.sql
+[0m13:54:29.019188 [info ] [MainThread]: 
+[0m13:54:29.020188 [error] [MainThread]: [31mFailure in model bronze_hosts (models\bronze\bronze_hosts.sql)[0m
+[0m13:54:29.020188 [error] [MainThread]:   Database Error in model bronze_hosts (models\bronze\bronze_hosts.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:29.021193 [info ] [MainThread]: 
+[0m13:54:29.021193 [info ] [MainThread]:   compiled code at target\compiled\gcp_dbt_snowflake_project\models\bronze\bronze_hosts.sql
+[0m13:54:29.022191 [info ] [MainThread]: 
+[0m13:54:29.022191 [error] [MainThread]: [31mFailure in model bronze_listings (models\bronze\bronze_listings.sql)[0m
+[0m13:54:29.023191 [error] [MainThread]:   Database Error in model bronze_listings (models\bronze\bronze_listings.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 11 unexpected '>'.
+  syntax error line 12 at position 35 unexpected ','.
+[0m13:54:29.023191 [info ] [MainThread]: 
+[0m13:54:29.024189 [info ] [MainThread]:   compiled code at target\compiled\gcp_dbt_snowflake_project\models\bronze\bronze_listings.sql
+[0m13:54:29.024189 [info ] [MainThread]: 
+[0m13:54:29.025211 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:54:29.025211 [debug] [MainThread]: Command `dbt run` failed at 13:54:29.025211 after 5.58 seconds
+[0m13:54:29.025211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001890FEEF4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018914BCA450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018914BCB920>]}
+[0m13:54:29.025211 [debug] [MainThread]: Flushing usage events
+[0m13:54:29.830313 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:57:32.103813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6A4F770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6A4D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6A4E030>]}
+
+
+============================== 13:57:32.103813 | 0cc61cf8-af0b-46c1-bca8-6786f583086a ==============================
+[0m13:57:32.103813 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:57:32.103813 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt compile', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:57:32.383175 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:57:32.383175 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:57:32.383175 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:57:32.591243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E809A180>]}
+[0m13:57:32.656804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E94B81D0>]}
+[0m13:57:32.656804 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:57:32.915437 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:57:33.068451 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:57:33.070506 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:57:33.070506 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:57:33.120565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E9659DF0>]}
+[0m13:57:33.222729 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:57:33.226741 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:57:33.236735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E9A2A6C0>]}
+[0m13:57:33.237747 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:57:33.238745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E9A5E540>]}
+[0m13:57:33.241629 [info ] [MainThread]: 
+[0m13:57:33.241629 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:57:33.241629 [info ] [MainThread]: 
+[0m13:57:33.241629 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:57:33.249934 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:57:33.338470 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:57:33.339551 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:57:33.339551 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:35.176696 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.837 seconds
+[0m13:57:35.178706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0cc61cf8-af0b-46c1-bca8-6786f583086a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E942BC20>]}
+[0m13:57:35.178706 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:35.185543 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:57:35.185543 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:35.185543 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:35.185543 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:35.185543 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:35.185543 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:35.185543 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:57:35.185543 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:35.185543 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:35.201313 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:35.201313 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:35.201313 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:35.201313 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:57:35.201313 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:35.201313 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:35.205802 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:57:35.205802 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_listings, now analysis.gcp_dbt_snowflake_project.if_else)
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:57:35.205802 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.if_else"
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:57:35.205802 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.if_else
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:57:35.205802 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.gcp_dbt_snowflake_project.if_else, now analysis.gcp_dbt_snowflake_project.loop)
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began compiling node analysis.gcp_dbt_snowflake_project.loop
+[0m13:57:35.205802 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.gcp_dbt_snowflake_project.loop"
+[0m13:57:35.205802 [debug] [Thread-2 (]: Began executing node analysis.gcp_dbt_snowflake_project.loop
+[0m13:57:35.205802 [debug] [Thread-2 (]: Finished running node analysis.gcp_dbt_snowflake_project.loop
+[0m13:57:35.205802 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:57:35.205802 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:57:35.205802 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:57:35.338241 [debug] [MainThread]: Connection 'analysis.gcp_dbt_snowflake_project.loop' was properly closed.
+[0m13:57:35.340498 [debug] [MainThread]: Command end result
+[0m13:57:35.357230 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:57:35.363524 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:57:35.368900 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:57:35.368900 [debug] [MainThread]: Command `dbt compile` succeeded at 13:57:35.368900 after 3.45 seconds
+[0m13:57:35.368900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6F01F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6F635C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E6F63EF0>]}
+[0m13:57:35.368900 [debug] [MainThread]: Flushing usage events
+[0m13:57:36.176302 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:57:41.609566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022377788E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237B2B32F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237B2B1970>]}
+
+
+============================== 13:57:41.609566 | 75f58aa5-0f0a-4468-a627-bccc0c6bdbf6 ==============================
+[0m13:57:41.609566 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:57:41.609566 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m13:57:41.891355 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:57:41.891355 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:57:41.891355 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:57:42.111209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237DE97FB0>]}
+[0m13:57:42.175866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237DE07A40>]}
+[0m13:57:42.175866 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m13:57:42.445117 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m13:57:42.563976 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:57:42.563976 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:57:42.563976 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:57:42.596032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237E1B6360>]}
+[0m13:57:42.688520 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:57:42.692284 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:57:42.698131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237E429AC0>]}
+[0m13:57:42.698131 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m13:57:42.698131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237CA855B0>]}
+[0m13:57:42.707966 [info ] [MainThread]: 
+[0m13:57:42.709974 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:57:42.709974 [info ] [MainThread]: 
+[0m13:57:42.709974 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:57:42.715517 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m13:57:42.785014 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m13:57:42.785014 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m13:57:42.785014 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:43.853101 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.075 seconds
+[0m13:57:43.868996 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m13:57:43.868996 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m13:57:43.868996 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m13:57:43.868996 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:45.019395 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.138 seconds
+[0m13:57:45.022923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237A7ABCB0>]}
+[0m13:57:45.032916 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:45.033986 [info ] [Thread-2 (]: 1 of 3 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m13:57:45.034993 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m13:57:45.036540 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:45.061005 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:45.063007 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:45.140856 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:45.140856 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.bookings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_bookings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:57:45.141856 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:57:46.262216 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.124 seconds
+[0m13:57:46.262216 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.262216 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m13:57:46.374099 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.114 seconds
+[0m13:57:46.389821 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.389821 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table MY_TEST_PROJECT.bronze.bronze_bookings
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m13:57:46.517584 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.129 seconds
+[0m13:57:46.517584 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.517584 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_BOOKINGS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m13:57:46.597554 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.080 seconds
+[0m13:57:46.613521 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.613521 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.613521 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:57:46.746596 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.123 seconds
+[0m13:57:46.746596 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:46.746596 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: insert into MY_TEST_PROJECT.bronze.bronze_bookings ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT")
+        (
+            select "BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m13:57:47.220536 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.467 seconds
+[0m13:57:47.221530 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:47.221530 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m13:57:47.343962 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.124 seconds
+[0m13:57:47.343962 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+[0m13:57:47.359179 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m13:57:47.359179 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: drop view if exists MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m13:57:47.454962 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.099 seconds
+[0m13:57:47.470935 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237CB1D610>]}
+[0m13:57:47.470935 [info ] [Thread-2 (]: 1 of 3 OK created sql incremental model bronze.bronze_bookings ................. [[32mSUCCESS 0[0m in 2.44s]
+[0m13:57:47.470935 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m13:57:47.470935 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:47.470935 [info ] [Thread-2 (]: 2 of 3 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m13:57:47.470935 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m13:57:47.470935 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:47.470935 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:47.470935 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:47.470935 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:47.470935 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_hosts )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:57:47.735616 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.249 seconds
+[0m13:57:47.737628 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:47.737628 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m13:57:47.835515 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.097 seconds
+[0m13:57:47.841547 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:47.841547 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table MY_TEST_PROJECT.bronze.bronze_hosts
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m13:57:47.925200 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.085 seconds
+[0m13:57:47.925200 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:47.925200 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m13:57:48.005250 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.079 seconds
+[0m13:57:48.005250 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:48.005250 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:48.005250 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:57:48.116583 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.099 seconds
+[0m13:57:48.116583 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:48.116583 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: insert into MY_TEST_PROJECT.bronze.bronze_hosts ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT")
+        (
+            select "HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m13:57:48.473479 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.355 seconds
+[0m13:57:48.475501 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:48.475501 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m13:57:48.598284 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m13:57:48.604090 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+[0m13:57:48.606098 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m13:57:48.606098 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: drop view if exists MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m13:57:48.700157 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.108 seconds
+[0m13:57:48.715917 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237F9F9A90>]}
+[0m13:57:48.715917 [info ] [Thread-2 (]: 2 of 3 OK created sql incremental model bronze.bronze_hosts .................... [[32mSUCCESS 0[0m in 1.24s]
+[0m13:57:48.715917 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m13:57:48.715917 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:48.715917 [info ] [Thread-2 (]: 3 of 3 START sql incremental model bronze.bronze_listings ...................... [RUN]
+[0m13:57:48.715917 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m13:57:48.715917 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:48.715917 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:48.715917 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:48.715917 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:48.715917 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:57:49.022822 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.297 seconds
+[0m13:57:49.022822 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.022822 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m13:57:49.102399 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.087 seconds
+[0m13:57:49.118224 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.118224 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table MY_TEST_PROJECT.bronze.bronze_listings
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m13:57:49.213622 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.096 seconds
+[0m13:57:49.213622 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.213622 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m13:57:49.309540 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.088 seconds
+[0m13:57:49.309540 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.309540 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.309540 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:57:49.411159 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.098 seconds
+[0m13:57:49.411159 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:49.411159 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: insert into MY_TEST_PROJECT.bronze.bronze_listings ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT")
+        (
+            select "LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m13:57:50.104920 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 0.687 seconds
+[0m13:57:50.105920 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:50.105920 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m13:57:50.297527 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.194 seconds
+[0m13:57:50.303121 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+[0m13:57:50.303121 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m13:57:50.303121 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: drop view if exists MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m13:57:50.413865 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.117 seconds
+[0m13:57:50.413865 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75f58aa5-0f0a-4468-a627-bccc0c6bdbf6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237FAC0C80>]}
+[0m13:57:50.413865 [info ] [Thread-2 (]: 3 of 3 OK created sql incremental model bronze.bronze_listings ................. [[32mSUCCESS 500[0m in 1.70s]
+[0m13:57:50.429709 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m13:57:50.432216 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:57:50.432216 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT' was left open.
+[0m13:57:50.432216 [debug] [MainThread]: On list_MY_TEST_PROJECT: Close
+[0m13:57:50.531338 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m13:57:50.532434 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m13:57:50.643180 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m13:57:50.643180 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m13:57:50.751337 [info ] [MainThread]: 
+[0m13:57:50.753353 [info ] [MainThread]: Finished running 3 incremental models in 0 hours 0 minutes and 8.04 seconds (8.04s).
+[0m13:57:50.755364 [debug] [MainThread]: Command end result
+[0m13:57:50.780938 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m13:57:50.782700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m13:57:50.792150 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m13:57:50.792150 [info ] [MainThread]: 
+[0m13:57:50.793154 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:57:50.793154 [info ] [MainThread]: 
+[0m13:57:50.793154 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:57:50.793154 [debug] [MainThread]: Command `dbt run` succeeded at 13:57:50.793154 after 9.35 seconds
+[0m13:57:50.793154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237B041F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237B043080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237B0419A0>]}
+[0m13:57:50.793154 [debug] [MainThread]: Flushing usage events
+[0m13:57:51.607680 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:00:01.780919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F8EA4170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F91BA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F91BB350>]}
+
+
+============================== 14:00:01.796729 | 2a136d80-68d3-4400-91b2-8368c967b901 ==============================
+[0m14:00:01.796729 [info ] [MainThread]: Running with dbt=1.11.8
+[0m14:00:01.796729 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m14:00:02.059604 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:00:02.059604 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:00:02.059604 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:00:02.293460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F967F6B0>]}
+[0m14:00:02.356825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FAA51250>]}
+[0m14:00:02.357810 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m14:00:02.595353 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m14:00:02.739648 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:00:02.739648 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:00:02.739648 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:00:02.780362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FBCBF440>]}
+[0m14:00:02.860697 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m14:00:02.860697 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m14:00:02.876531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FC0B5730>]}
+[0m14:00:02.880669 [info ] [MainThread]: Found 2 analyses, 3 models, 3 sources, 524 macros
+[0m14:00:02.880669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FA84C080>]}
+[0m14:00:02.880669 [info ] [MainThread]: 
+[0m14:00:02.880669 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:00:02.880669 [info ] [MainThread]: 
+[0m14:00:02.880669 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:00:02.880669 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT'
+[0m14:00:02.967680 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT"
+[0m14:00:02.967680 [debug] [ThreadPool]: On list_MY_TEST_PROJECT: show terse schemas in database MY_TEST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT"} */
+[0m14:00:02.968689 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:00:04.228594 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.263 seconds
+[0m14:00:04.228594 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MY_TEST_PROJECT_bronze'
+[0m14:00:04.244717 [debug] [ThreadPool]: Using snowflake connection "list_MY_TEST_PROJECT_bronze"
+[0m14:00:04.244717 [debug] [ThreadPool]: On list_MY_TEST_PROJECT_bronze: show objects in MY_TEST_PROJECT.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_MY_TEST_PROJECT_bronze"} */;
+[0m14:00:04.244717 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:00:05.878176 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.633 seconds
+[0m14:00:05.882098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FD5818B0>]}
+[0m14:00:05.886098 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m14:00:05.887326 [info ] [Thread-2 (]: 1 of 3 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m14:00:05.888302 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.gcp_dbt_snowflake_project.bronze_bookings'
+[0m14:00:05.888302 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m14:00:05.897815 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:05.898814 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m14:00:05.940982 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:05.941983 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.bookings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_bookings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m14:00:05.941983 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:00:07.647263 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.706 seconds
+[0m14:00:07.655324 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:07.655324 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m14:00:07.775272 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.118 seconds
+[0m14:00:07.779834 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:07.779834 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table MY_TEST_PROJECT.bronze.bronze_bookings
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m14:00:07.903008 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.122 seconds
+[0m14:00:07.911283 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:07.911283 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_BOOKINGS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m14:00:08.022074 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.110 seconds
+[0m14:00:08.037118 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:08.038552 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:08.038552 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m14:00:08.175344 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.136 seconds
+[0m14:00:08.175727 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:08.175727 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: insert into MY_TEST_PROJECT.bronze.bronze_bookings ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT")
+        (
+            select "BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */;
+[0m14:00:09.223345 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 1.047 seconds
+[0m14:00:09.224112 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:09.225269 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m14:00:09.369850 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.144 seconds
+[0m14:00:09.375857 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp
+[0m14:00:09.381359 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_bookings"
+[0m14:00:09.381359 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_bookings: drop view if exists MY_TEST_PROJECT.bronze.bronze_bookings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_bookings"} */
+[0m14:00:10.097260 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.716 seconds
+[0m14:00:10.115728 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FA84D8B0>]}
+[0m14:00:10.115728 [info ] [Thread-2 (]: 1 of 3 OK created sql incremental model bronze.bronze_bookings ................. [[32mSUCCESS 0[0m in 4.23s]
+[0m14:00:10.116794 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_bookings
+[0m14:00:10.117814 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m14:00:10.117814 [info ] [Thread-2 (]: 2 of 3 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m14:00:10.118482 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_bookings, now model.gcp_dbt_snowflake_project.bronze_hosts)
+[0m14:00:10.118482 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m14:00:10.121613 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.122614 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m14:00:10.124614 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.125598 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_hosts )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m14:00:10.400527 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.275 seconds
+[0m14:00:10.402641 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.403646 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m14:00:10.576640 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.173 seconds
+[0m14:00:10.580408 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.581303 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table MY_TEST_PROJECT.bronze.bronze_hosts
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m14:00:10.668040 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.087 seconds
+[0m14:00:10.672028 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.673037 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m14:00:10.751066 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.078 seconds
+[0m14:00:10.754080 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.754968 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.754968 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m14:00:10.842511 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.098 seconds
+[0m14:00:10.842511 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:10.842511 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: insert into MY_TEST_PROJECT.bronze.bronze_hosts ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT")
+        (
+            select "HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */;
+[0m14:00:11.370915 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.514 seconds
+[0m14:00:11.370915 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:11.370915 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m14:00:11.502554 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.129 seconds
+[0m14:00:11.505110 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp
+[0m14:00:11.506100 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_hosts"
+[0m14:00:11.506100 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_hosts: drop view if exists MY_TEST_PROJECT.bronze.bronze_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_hosts"} */
+[0m14:00:11.628538 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m14:00:11.630881 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FD6BA7E0>]}
+[0m14:00:11.630881 [info ] [Thread-2 (]: 2 of 3 OK created sql incremental model bronze.bronze_hosts .................... [[32mSUCCESS 0[0m in 1.51s]
+[0m14:00:11.632021 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_hosts
+[0m14:00:11.632983 [debug] [Thread-2 (]: Began running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m14:00:11.632983 [info ] [Thread-2 (]: 3 of 3 START sql incremental model bronze.bronze_listings ...................... [RUN]
+[0m14:00:11.633983 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.gcp_dbt_snowflake_project.bronze_hosts, now model.gcp_dbt_snowflake_project.bronze_listings)
+[0m14:00:11.633983 [debug] [Thread-2 (]: Began compiling node model.gcp_dbt_snowflake_project.bronze_listings
+[0m14:00:11.635985 [debug] [Thread-2 (]: Writing injected SQL for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:11.636985 [debug] [Thread-2 (]: Began executing node model.gcp_dbt_snowflake_project.bronze_listings
+[0m14:00:11.639836 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:11.639836 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: create or replace  temporary view MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+     
+
+SELECT * FROM MY_TEST_PROJECT.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m14:00:11.841862 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.201 seconds
+[0m14:00:11.845485 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:11.846271 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m14:00:11.929795 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.091 seconds
+[0m14:00:11.943582 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:11.944178 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table MY_TEST_PROJECT.bronze.bronze_listings
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m14:00:12.009596 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.077 seconds
+[0m14:00:12.026639 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:12.026639 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: describe table "MY_TEST_PROJECT"."BRONZE"."BRONZE_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m14:00:12.088736 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.077 seconds
+[0m14:00:12.106575 [debug] [Thread-2 (]: Writing runtime sql for node "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:12.108586 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:12.108586 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m14:00:12.213487 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.103 seconds
+[0m14:00:12.213487 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:12.214489 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: insert into MY_TEST_PROJECT.bronze.bronze_listings ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT")
+        (
+            select "LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT"
+            from MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */;
+[0m14:00:12.916683 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.702 seconds
+[0m14:00:12.916683 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:12.916683 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m14:00:13.041321 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.131 seconds
+[0m14:00:13.041321 [debug] [Thread-2 (]: Applying DROP to: MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp
+[0m14:00:13.041321 [debug] [Thread-2 (]: Using snowflake connection "model.gcp_dbt_snowflake_project.bronze_listings"
+[0m14:00:13.041321 [debug] [Thread-2 (]: On model.gcp_dbt_snowflake_project.bronze_listings: drop view if exists MY_TEST_PROJECT.bronze.bronze_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "gcp_dbt_snowflake_project", "target_name": "dev", "node_id": "model.gcp_dbt_snowflake_project.bronze_listings"} */
+[0m14:00:13.172322 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.118 seconds
+[0m14:00:13.176334 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a136d80-68d3-4400-91b2-8368c967b901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FD7A6EA0>]}
+[0m14:00:13.176334 [info ] [Thread-2 (]: 3 of 3 OK created sql incremental model bronze.bronze_listings ................. [[32mSUCCESS 0[0m in 1.54s]
+[0m14:00:13.178343 [debug] [Thread-2 (]: Finished running node model.gcp_dbt_snowflake_project.bronze_listings
+[0m14:00:13.178343 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:00:13.178343 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT' was left open.
+[0m14:00:13.178343 [debug] [MainThread]: On list_MY_TEST_PROJECT: Close
+[0m14:00:13.303629 [debug] [MainThread]: Connection 'list_MY_TEST_PROJECT_bronze' was left open.
+[0m14:00:13.304628 [debug] [MainThread]: On list_MY_TEST_PROJECT_bronze: Close
+[0m14:00:13.407817 [debug] [MainThread]: Connection 'model.gcp_dbt_snowflake_project.bronze_listings' was left open.
+[0m14:00:13.407817 [debug] [MainThread]: On model.gcp_dbt_snowflake_project.bronze_listings: Close
+[0m14:00:13.576804 [info ] [MainThread]: 
+[0m14:00:13.578979 [info ] [MainThread]: Finished running 3 incremental models in 0 hours 0 minutes and 10.70 seconds (10.70s).
+[0m14:00:13.579965 [debug] [MainThread]: Command end result
+[0m14:00:13.604857 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\manifest.json
+[0m14:00:13.606244 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\semantic_manifest.json
+[0m14:00:13.612485 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user\gcp_dbt_Snowflake\gcp_dbt_snowflake_project\target\run_results.json
+[0m14:00:13.612485 [info ] [MainThread]: 
+[0m14:00:13.613447 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:00:13.613447 [info ] [MainThread]: 
+[0m14:00:13.614434 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:00:13.615434 [debug] [MainThread]: Command `dbt run` succeeded at 14:00:13.615434 after 12.06 seconds
+[0m14:00:13.615434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FA812CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FA8124E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2FA812C30>]}
+[0m14:00:13.616323 [debug] [MainThread]: Flushing usage events
+[0m14:00:14.572230 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:55:19.437953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029665DFA1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029662AD5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002966582C080>]}
+
+
+============================== 10:55:19.451204 | 0ac386de-c339-4d00-b5bc-55bd9b1ed358 ==============================
+[0m10:55:19.451204 [info ] [MainThread]: Running with dbt=1.11.8
+[0m10:55:19.451204 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'c:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m10:55:19.584873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ac386de-c339-4d00-b5bc-55bd9b1ed358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029662BD63F0>]}
+[0m10:55:19.600611 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:55:19.600611 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:55:19.600611 [debug] [MainThread]: Command `cli deps` succeeded at 10:55:19.600611 after 0.32 seconds
+[0m10:55:19.600611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029665A3E4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029665930590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029665932BD0>]}
+[0m10:55:19.600611 [debug] [MainThread]: Flushing usage events
+[0m10:55:20.434137 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:07:09.840185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72F619A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72F63BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72F61430>]}
+
+
+============================== 11:07:09.844947 | 4e95d0ce-94b6-4b0c-9af8-214a5a17dea8 ==============================
+[0m11:07:09.844947 [info ] [MainThread]: Running with dbt=1.11.8
+[0m11:07:09.846226 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'c:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt ', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\user\\gcp_dbt_Snowflake\\gcp_dbt_snowflake_project\\logs'}
+[0m11:07:09.946899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e95d0ce-94b6-4b0c-9af8-214a5a17dea8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E702063F0>]}
+[0m11:07:09.977054 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:07:09.977054 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:07:09.977054 [debug] [MainThread]: Command `cli deps` succeeded at 11:07:09.977054 after 0.29 seconds
+[0m11:07:09.977054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72B064B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72E5C470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E72E5DAF0>]}
+[0m11:07:09.977054 [debug] [MainThread]: Flushing usage events
+[0m11:07:10.830342 [debug] [MainThread]: An error was encountered while trying to flush usage events

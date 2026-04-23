@@ -1,6 +1,0 @@
- 
-
-SELECT * FROM MY_TEST_PROJECT.staging.listings
-
-
-    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM MY_TEST_PROJECT.bronze.bronze_listings )

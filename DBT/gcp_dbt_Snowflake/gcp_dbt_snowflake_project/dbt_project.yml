@@ -1,0 +1,24 @@
+
+name: 'gcp_dbt_snowflake_project'
+version: '1.0.0'
+
+
+profile: 'gcp_dbt_snowflake_project'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  gcp_dbt_snowflake_project:
+    bronze:
+      +materialized: table

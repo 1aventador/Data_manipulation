@@ -1,0 +1,9 @@
+sources:
+  - name: staging
+    database: MY_TEST_PROJECT  
+    schema: staging  
+    tables:
+      - name: listings
+      - name: bookings
+      - name: hosts
+    

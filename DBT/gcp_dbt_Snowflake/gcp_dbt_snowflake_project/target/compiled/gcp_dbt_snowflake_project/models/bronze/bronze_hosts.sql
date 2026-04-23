@@ -1,0 +1,1 @@
+SELECT * FROM MY_TEST_PROJECT.staging.hosts
